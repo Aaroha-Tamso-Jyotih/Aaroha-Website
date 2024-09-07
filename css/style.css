@@ -37,7 +37,7 @@ a:focus {
   padding: 15px 25px;
   border: 1px solid #549ad4;
   border-radius: 15px;
-  color:white;
+  color:#777777;
   font-weight: 600;
   z-index: 1;
   background: transparent;
@@ -987,6 +987,7 @@ a:focus {
 }
 .causes-a {
   font-weight: 600;
+  color:rgb(0,0,255,0.7);
 }
 
 .causes .causes-progress {
