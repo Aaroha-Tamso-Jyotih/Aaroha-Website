@@ -163,6 +163,74 @@ a:focus {
   color: #549ad4;
 }
 
+/* app banner  start*/
+.top-banner {
+  background: linear-gradient(90deg, #4CAF50, #00C9FF);
+  color: white;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.sliding-text {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 80%; /* Adjust width as needed */
+}
+
+.sliding-text span {
+    text-align: end;
+  display: flex;
+  /* display: flex; */
+  justify-content: flex-end;
+  animation: slideText 7s linear infinite;
+}
+
+@keyframes slideText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.banner-link {
+  background-color: white;
+  color: #4CAF50;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.banner-link:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+@media (max-width: 575.98px) {
+  .banner-link  {
+    padding: 4px 15px;
+    width:100px;
+  }
+}
+
+/* app banner end */
 /**********************************/
 /********** Top Bar CSS ***********/
 /**********************************/
